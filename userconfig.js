@@ -1,23 +1,24 @@
 const CONFIG = new Config({
   crypto: {
     coin: 'ETH',
-    currency: 'USD',
+    currency: 'EUR',
     refreshIn: 10
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Pineto',
     scale: 'C'
   },
   clock: {
-    format: 'h:i p',
+    format: 'd/N/Y - h:i:s',
     iconColor: '#ff7b95'
   },
   search: {
+    // default is g, for some reason (obv I don't know JS)
     engines: {
-      g: ['https://google.com/search?q=', 'Google'],
+      g: ['https://duckduckgo.com/?q=', 'DuckDuckGo'],
+      d: ['https://google.com/search?q=', 'Google'],
       i: ['https://ixquick.com/do/search?q=', 'Ixquick'],
-      d: ['https://duckduckgo.com/html?q=', 'DuckDuckGo'],
       y: ['https://youtube.com/results?search_query=', 'Youtube'],
       w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
     }
@@ -26,8 +27,8 @@ const CONFIG = new Config({
     "t": 'todo-list',
     "s": 'search-bar'
   },
-  disabled: [],
-  openLastVisitedTab: false,
+  disabled: ['todo-list'],
+  openLastVisitedTab: true,
   tabs: [
     {
       name: 'boards',

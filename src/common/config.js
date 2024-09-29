@@ -2,26 +2,26 @@ class Config {
   defaults = {
     overrideStorage: false,
     crypto: {
-      currency: 'USD',
+      currency: 'EUR',
       coin: 'ETH',
-      refreshIn: 15
+      refreshIn: 10
     },
     temperature: {
-      location: 'New York',
+      location: 'Pineto',
       scale: 'C'
     },
     clock: {
-      format: 'h:i p',
+      format: 'd/m/Y - h:i:s',
       iconColor: '#ff7b95'
     },
     search: {
       engines: {
-        g: ['https://google.com/search?q=', 'Google'],
+        d: ['https://duckduckgo.com/?q=', 'DuckDuckGo'],
         y: ['https://youtube.com/results?search_query=', 'Youtube'],
       }
     },
     disabled: [],
-    openLastVisitedTab: false,
+    openLastVisitedTab: true,
     tabs: [],
     keybindings: {
       "t": 'todo-list',

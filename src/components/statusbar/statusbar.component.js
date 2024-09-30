@@ -59,7 +59,7 @@ class Statusbar extends Component {
       }
 
       #tabs ul li:not(:last-child)::after {
-          content: counter(tabs, cjk-ideographic);
+          content: counter(tabs, roman);
           counter-increment: tabs;
           display: flex;
           width: 100%;

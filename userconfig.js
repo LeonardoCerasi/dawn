@@ -34,122 +34,179 @@ const CONFIG = new Config({
       name: 'boards',
       background_url: 'src/img/banners/bg-1.gif',
       categories: [{
-        name: 'fun',
+        name: 'news',
         links: [
           {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
+            name: 'manifesto',
+            url: 'https://ilmanifesto.it/',
+            icon: 'news',
+            icon_color: '#dc143c',
           },
           {
-            name: '/out/',
-            url: 'https://4chan.org/out',
-            icon: 'leaf',
-            icon_color: '#64876d'
+            name: 'guardian',
+            url: 'https://theguardian.com/europe/',
+            icon: 'brand-guardian',
+            icon_color: '#0073cf',
           },
           {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
-            icon: 'book'
+            name: 'repubblica',
+            url: 'https://repubblica.it/',
+            icon: 'book',
+            icon_color: '#bebebe',
           },
           {
-            name: '/v/',
-            url: 'https://4chan.org/v/',
-            icon: 'device-gamepad',
-            icon_color: '#8b647b'
+            name: 'gt',
+            url: 'https://globaltimes.cn/',
+            icon: 'affiliate',
+            icon_color: '#ed872d',
           },
           {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
-          }
+            name: 'metalitalia',
+            url: 'https://metalitalia.com/',
+            icon: 'meteor',
+            icon_color: '#008000'
+          },
         ]
       },
       {
-        name: 'Comfy',
+        name: 'Science',
         links: [
           {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
+            name: 'scientific american',
+            url: 'https://scientificamerican.com/',
           },
           {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
-          }
+            name: 'quanta magazine',
+            url: 'https://quantamagazine.org/',
+          },
+          {
+            name: 'le scienze',
+            url: 'https://lescienze.it/',
+          },
         ]
       },
       {
-        name: 'Technology',
+        name: 'Proton',
         links: [
           {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
+            name: 'mail',
+            url: 'https://mail.proton.me/u/0/inbox/',
+            icon: 'mail',
+            icon_color: '#7b68ee',
           },
           {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
+            name: 'calendar',
+            url: 'https://calendar.proton.me/u/0',
+            icon: 'calendar-event',
+            icon_color: '#9370db',
           },
           {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
+            name: 'drive',
+            url: 'https://drive.proton.me/u/0',
+            icon: 'server-2',
+            icon_color: '#8a2be2'
           },
-          {
-            name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
-          },
-          {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
-            icon: 'code'
-          }
         ]
-      }
+      },
       ]
     },
     {
-      name: 'music',
+      name: 'study',
       background_url: 'src/img/banners/bg-2.gif',
       categories: [
         {
-          name: 'music services',
+          name: 'unimi',
           links: [
             {
-              url: 'https://soundcloud.com/',
-              icon: 'brand-soundcloud',
-              icon_color: '#c57750'
+              url: 'https://unimia.unimi.it/',
+              icon: 'notebook',
+              icon_color: '#bebebe',
+              name: 'unimia',
             },
             {
-              url: 'https://youtu.be/',
-              icon: 'brand-youtube',
-              icon_color: '#996767'
+              url: 'https://ariel.unimi.it/',
+              icon: 'school',
+              icon_color: '#008000',
+              name: 'ariel',
             },
             {
-              url: 'https://r-a-d.io/',
-              icon: 'radio'
+              url: 'https://minerva.unimi.it/',
+              icon: 'book',
+              icon_color: '#ed872d',
+              name: 'minerva',
+            },
+            {
+              url: 'https://easystaff.divsi.unimi.it/PortaleStudenti/',
+              icon: 'list search',
+              icon_color: '#dda0dd',
+              name: 'agenda',
+            },
+            {
+              url: 'https://outlook.office.com/mail/',
+              icon: 'mail',
+              icon_color: '#0073cf',
+              name: 'mail',
             },
           ]
         },
         {
-          name: 'music boards',
+          name: 'corsi',
           links: [
             {
-              name: '/music/',
-              url: 'https://lainchan.org/music/',
-              icon: 'disc'
+              name: '/quantistica/',
+              url: 'https://pcforte.mi.infn.it/mq/index.html',
+              icon: 'brand-elastic',
+              icon_color: '#008000',
             },
             {
-              name: '/mu/',
-              url: 'https://boards.4channel.org/mu/',
-            }
+              name: '/relatività/',
+              url: 'https://myariel.unimi.it/course/view.php?id=5082',
+              icon: 'diabolo',
+              icon_color: '#dc143c',
+            },
+            {
+              name: '/nucleare/',
+              url: 'https://www0.mi.infn.it/~sleoni/Istituzioni-FISNUC.html',
+              icon: 'brand-react-native',
+              icon_color: '#ed872d',
+            },
+            {
+              name: '/geo & gruppi/',
+              url: 'https://drive.google.com/drive/folders/1ZsMwLztSQsZEu7GBfX8Xo9ZHXpbviECY',
+              icon: 'hexagon-3d',
+              icon_color: '#0073cf',
+            },
           ]
-        }
+        },
+        {
+          name: 'journals',
+          links: [
+            {
+              name: 'arXiv',
+              url: 'https://arxiv.org',
+            },
+            {
+              name: 'nature',
+              url: 'https://www-nature-com.pros1.lib.unimi.it/',
+            },
+            {
+              name: 'nature astronomy',
+              url: 'https://www-nature-com.pros1.lib.unimi.it/natastron/',
+            },
+            {
+              name: 'science',
+              url: 'https://www-science-org.pros1.lib.unimi.it/loi/science/',
+            },
+          ]
+        },
       ]
     },
     {
-      name: 'tech',
+      name: 'dev',
       background_url: 'src/img/banners/bg-3.gif',
       categories: [
         {
-          name: 'subreddits',
+          name: 'djf',
           links: [
             {
               name: 'r/startpages/',
@@ -206,5 +263,20 @@ const CONFIG = new Config({
           ]
         }
       ]
-    }]
+    },
+    {
+      name: 'chill',
+      background_url: 'src/img/banners/sw.gif',
+      categories: [
+        {
+          name: 'prova',
+          links: [
+            {
+              name: 'prova',
+              url: 'prova',
+            },
+          ]
+        },
+      ]
+    },]
 });
